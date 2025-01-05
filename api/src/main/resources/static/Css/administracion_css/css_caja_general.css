@@ -1,0 +1,178 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #1a1a1a;
+    color: white;
+}
+.contenedor-grande {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contenido-principal {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    color: rgb(0, 0, 0);
+    margin-left: 250px;
+    width: calc(100% - 2050px);
+}
+
+
+.cajas-estado {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.caja-estado {
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caja-estado-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.contador-estado {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.icono-info {
+    cursor: pointer;
+}
+.cajas-contenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+.caja-contenido {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    height: 200px;
+}
+
+.tarjetas-estado {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tarjeta-estado {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    align-items: center;
+}
+
+.texto-estado1 {
+    font-size: 1.2em;
+    color: #b6d216;
+    text-align: left;
+}
+
+.texto-estado2 {
+    font-size: 1.2em;
+    color: #048fbd;
+}
+
+.texto-estado3 {
+    font-size: 1.2em;
+    color: #8f0273;
+}
+
+.numero-estado {
+    font-size: 2em;
+    color: #000000;
+    margin-left: auto;
+    text-align: right;
+}
+
+
+.tarjetas-habitacion {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+
+.card{
+    width: 18rem;
+}
+
+.fa-bed{
+    font-size: 100px;
+}
+
+.tarjeta-habitacion {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.tarjeta-habitacion h3 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.tarjeta-habitacion p {
+    font-size: 1em;
+    color: #777;
+}
+
+.tarjeta-habitacion .material-icons {
+    font-size: 4em;
+    color: #999595;
+}
+
+.estado-habitacion {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ff4c4c;
+}
+
+.card{
+    width: 600px;
+}
+
+
+.list-group{
+    display: flex;
+    width: 250%;
+
+}
+
+.list-group-item .d-flex div {
+    display: flex;
+    align-items: center;
+}
+
+.list-group-item .d-flex div input[type="number"] {
+    width: 50px;
+    margin-right: 10px;
+}

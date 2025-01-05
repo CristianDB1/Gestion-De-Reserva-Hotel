@@ -1,0 +1,116 @@
+.btn-crear-habitacion {
+    background-color: #26a69a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-crear-habitacion:hover {
+    background-color: #1f8d7e;
+}
+
+
+.btn-editar {
+    background-color: #ffb74d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eliminar {
+    background-color: #ef5350;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-editar:hover {
+    background-color: #ffa726;
+}
+
+.btn-eliminar:hover {
+    background-color: #e53935;
+}
+
+.btn-crear-habitacion {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-crear-habitacion:hover {
+    background-color: #218838;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-content input, .modal-content select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content .btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-cancelar, .btn-guardar {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+}
+
+.btn-cancelar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-guardar {
+    background-color: #007bff;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
