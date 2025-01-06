@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <form id="login-form">
+
+    <form th:action="@{/login}" method="post" id="login-form">
         <h1 class="title">Login</h1>
 
-        <label for="usuario">
+        <label for="username">
             <i class="fa-solid fa-user"></i>
-            <input placeholder="usuario" type="text"id = "usuario">
+            <input placeholder="username" type="text" id = "username" required>
         </label>
 
-        <label for="contraseña">
+        <label for="password">
             <i class="fa-solid fa-lock"></i>
-            <input placeholder="contraseña" type="password"id = "contraseña">
+            <input placeholder="password" type="password" id = "password" required>
         </label>
 
         <a href="#" class="link">has olvidado tu contraseña?</a>
 
-        <button id="login-button">Login</button>
+        <button id="login-button" type="submit">Iniciar Sesion</button>
 
-        <p class="register-text">¿No tienes cuenta? <a href="/Componentes/Pages/index_singin.html" class="register-link">Regístrate aquí</a></p>
+        <p class="register-text">¿No tienes cuenta? <a href="/registro" class="register-link">Regístrate aquí</a></p>
 
     </form>
 

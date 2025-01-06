@@ -1,10 +1,12 @@
 package com.reservahotel.api.Controller;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("Gestion")
+@RequestMapping("/Gestion")
+@RequiredArgsConstructor
 public class Controlador {
 
     @GetMapping("/niveles")
